@@ -13,9 +13,9 @@ print(f'retezec.index() {retezec.index(hledat)}')
 print(f'len(retezec) {len(retezec)}')
 x = len(retezec)
 print(f"Hledal jsi v textu {retezec}, "
-      f"ten je dlouhý {x} znaků, "
-      f"v něm jsi se snažil najít text {hledat}, "
-      f"a ten je na pozici {retezec.index(hledat)}")
+      f"\nten je dlouhý {x} znaků, "
+      f"\nv něm jsi se snažil najít text {hledat}, "
+      f"\na ten je na pozici {retezec.index(hledat)}")
 
 #Task 10
 # - uživatel vloží dva řetězce a program vypíše True pokud je první retězec delší.
