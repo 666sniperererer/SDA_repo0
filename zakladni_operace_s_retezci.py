@@ -24,4 +24,4 @@ print(f"Hledal jsi v textu {retezec}, "
 text1 = input("Vlož první řetězec: ")
 text2 = input("Vlož druhý řetězec: ")
 
-print(len(text1)>len(text2))
+print(f"Je první text delší? {len(text1)>len(text2)}")
