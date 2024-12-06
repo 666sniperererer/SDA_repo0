@@ -30,3 +30,17 @@ retezec_t12_1 = retezec_t12_0[5:99]
 retezec_t12_2 = retezec_t12_1[::-1]
 retezec_t12_final = retezec_t12_2[::4]
 print(retezec_t12_final)
+
+print(retezec_t12_final.upper()) #vše velkými
+print(retezec_t12_final.lower()) #vše malými
+print(retezec_t12_final.lower()[:10]) #vše malými, jen do desátého indexu
+
+slozenina = retezec_t12_final.lower()[:5] + retezec_t12_final.upper()[5:]
+print(slozenina)
+
+#Task 13
+text_t13 = input("Zadej text: ")
+vsemale = text_t13 == text_t13.lower()
+vsevelke = text_t13 == text_t13.upper()
+print(f"Je text {text_t13} celý malými znaky? Odpověď: {vsemale}")
+print(f"Je text {text_t13} celý velkými znaky? Odpověď: {vsevelke}")
