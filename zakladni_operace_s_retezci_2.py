@@ -67,6 +67,7 @@ print(f"Celý seznam seznam_t14 má obsah: {seznam_t14}")
 #vypíšete prvek na indexu 2
 
 #Task 14 (stále)
+'''
 novyseznam_t14 = []
 novyseznam_t14.append(input("Zadej první prvek seznamu: "))
 novyseznam_t14.append(input("Zadej druhý prvek seznamu: "))
@@ -75,3 +76,17 @@ print(f"Celý seznam novyseznam_t14 má obsah: {novyseznam_t14}")
 print(f"První prvek novyseznam_t14 má obsah: {novyseznam_t14[0]}")
 print(f"Druhý prvek novyseznam_t14 má obsah: {novyseznam_t14[1]}")
 print(f"Třetí prvek novyseznam_t14 má obsah: {novyseznam_t14[2]}")
+print(f"Seznam novyseznam_t14 obsahuje následující počet prvků: {len(novyseznam_t14)}")
+novyseznam_t14.pop() #odebere poslední prvek
+'''
+
+text_t14c = []
+text_t14c.append(["Blovo1","Klovo2"])
+text_t14c.append("Slovo3")
+text_t14c.append("Dlovo4")
+print(text_t14c)
+print(f"prvek na indexu 0 je {text_t14c[0]}")
+print(f"prvek na indexu 0 -> 0 je {text_t14c[0][0]}")
+print(f"prvek na indexu 0 -> 1 je {text_t14c[0][1]}")
+print(f"prvek na indexu 0 -> 1 -> 3 je {text_t14c[0][1][0]}")
+print(f"prvek na indexu 1 -> 0 je {text_t14c[1][0]}")
