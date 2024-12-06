@@ -39,8 +39,39 @@ slozenina = retezec_t12_final.lower()[:5] + retezec_t12_final.upper()[5:]
 print(slozenina)
 
 #Task 13
+'''
 text_t13 = input("Zadej text: ")
 vsemale = text_t13 == text_t13.lower()
 vsevelke = text_t13 == text_t13.upper()
 print(f"Je text {text_t13} celý malými znaky? Odpověď: {vsemale}")
 print(f"Je text {text_t13} celý velkými znaky? Odpověď: {vsevelke}")
+'''
+
+#Task 14
+seznam_t14 = []
+seznam_t14.append("Honza")
+print(seznam_t14)
+seznam_t14.append("Pavel")
+seznam_t14.append("Jan")
+seznam_t14.append("Executor")
+print(f"Celý seznam seznam_t14 má obsah: {seznam_t14}")
+print(f"První prvek v seznamu, tedy na indexu 0, je: {seznam_t14[0]}")
+print(f"Třetí prvek v seznamu, tedy na indexu 2, je: {seznam_t14[2]}")
+seznam_t14.extend(["Barbar","Conan","Strejda","Skrblík"])
+print(f"Celý seznam seznam_t14 má obsah: {seznam_t14}")
+#Program se postupně bude ptát na texty
+#všechny texty přidáte do listu
+#vypíšete celý list naráz
+#vypíšete prvek na indexu 0
+#vypíšete prvek na indexu 1
+#vypíšete prvek na indexu 2
+
+#Task 14 (stále)
+novyseznam_t14 = []
+novyseznam_t14.append(input("Zadej první prvek seznamu: "))
+novyseznam_t14.append(input("Zadej druhý prvek seznamu: "))
+novyseznam_t14.append(input("Zadej třetí prvek seznamu: "))
+print(f"Celý seznam novyseznam_t14 má obsah: {novyseznam_t14}")
+print(f"První prvek novyseznam_t14 má obsah: {novyseznam_t14[0]}")
+print(f"Druhý prvek novyseznam_t14 má obsah: {novyseznam_t14[1]}")
+print(f"Třetí prvek novyseznam_t14 má obsah: {novyseznam_t14[2]}")
