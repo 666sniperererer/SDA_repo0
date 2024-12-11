@@ -33,6 +33,42 @@ else:
 
 #Task 31,32,33
 
+#Task 31
+'''
+Zadání:
+Napiš program, který požádá uživatele o zadání věku.
+Program zkontroluje a vypíše, do které věkové kategorie patří:
+
+"Dítě", pokud je věk menší než 12 let,
+"Teenager", pokud je věk od 12 do 18 let,
+"Dospělý", pokud je věk od 19 do 59 let,
+"Senior", pokud je věk 60 a více let.
+'''
+
+#Task 32
+'''
+Zadání:
+Napiš program, který požádá uživatele o zadání čísla odpovídající známce (1 až 5). Program vypíše hodnocení:
+
+1 = "Výborně"
+2 = "Chvalitebně"
+3 = "Dobře"
+4 = "Dostatečně"
+5 = "Nedostatečně"
+Pokud uživatel zadá jiné číslo než 1–5, vypiš: "Neplatná známka".
+'''
+
+#Task 33
+'''
+Zadání:
+Napiš program, který požádá uživatele o zadání čísla odpovídající přijmu firmy:
+
+pokud je číslo kladné, tak se vypíše "Firma je v zisku"
+pokud je číslo nula, tak se vypíše "Firma je na nule"
+pokud je číslo záporné, tak se vypíše "Brzo bude krach"
+
+'''
+'''
 cislotasku = int(input("Vlož číslo tasku k provedení: "))
 
 if cislotasku == 31:
@@ -71,39 +107,88 @@ elif cislotasku == 33:
         print("Brzy bude krach!")
 else:
     print("Vybral jsi task, který teď neřešíme.")
-
-#Task 31
-'''
-Zadání:
-Napiš program, který požádá uživatele o zadání věku.
-Program zkontroluje a vypíše, do které věkové kategorie patří:
-
-"Dítě", pokud je věk menší než 12 let,
-"Teenager", pokud je věk od 12 do 18 let,
-"Dospělý", pokud je věk od 19 do 59 let,
-"Senior", pokud je věk 60 a více let.
 '''
 
-#Task 32
 '''
-Zadání:
-Napiš program, který požádá uživatele o zadání čísla odpovídající známce (1 až 5). Program vypíše hodnocení:
-
-1 = "Výborně"
-2 = "Chvalitebně"
-3 = "Dobře"
-4 = "Dostatečně"
-5 = "Nedostatečně"
-Pokud uživatel zadá jiné číslo než 1–5, vypiš: "Neplatná známka".
+vek = 61
+if vek < 60:
+    print("dospělý")
+    if vek < 19:
+        print("teenager")
+        if vek < 12:
+            print("dítě")
+else:
+    print("senior")
 '''
 
-#Task 33
+#Cyklus while
 '''
-Zadání:
-Napiš program, který požádá uživatele o zadání čísla odpovídající přijmu firmy:
-
-pokud je číslo kladné, tak se vypíše "Firma je v zisku"
-pokud je číslo nula, tak se vypíše "Firma je na nule"
-pokud je číslo záporné, tak se vypíše "Brzo bude krach"
-
+counter = 0
+while counter <= 10:
+    print(counter)
+    counter += 1
 '''
+
+#2 while v sobě
+'''
+counter2 = 0
+while counter2 <= 10:
+    vnitrni_counter = 0 #resetuju vnitřní counter pře zahájením nového cyklu
+    while vnitrni_counter < 40:
+        print(vnitrni_counter)
+        vnitrni_counter += 10
+    print(counter2)
+    counter2 += 1
+'''
+
+# Bude provádět cykly dokud je n menší než 5
+'''
+n = 0
+while n < 5:
+    n += 1  # Zvyší n s každým průchodem cyklu (iterací)
+    if n == 4:  # Pokud je n rovno 4, preruší cyklus
+        break
+    if n == 1:  # Pokud je n rovno 1, pokračuje s novou iterací
+        continue
+    print(n)
+'''
+'''
+radek = 1
+while radek < 5:
+    sloupec = 0
+    co_vypsat = ""
+    while sloupec < radek:
+        #print("#", end='')
+        co_vypsat += "#"
+        sloupec += 1
+    print(co_vypsat)
+    radek += 1
+'''
+
+#Task 35
+#pomocí while cyklu dejte do listu čísla od 1 do 20
+#list vyprintujte
+cislo = 0
+list = []
+while cislo < 21:
+    cislo += 1
+    list.append(cislo)
+    if cislo == 20:
+        print(list)
+
+
+#Task 36
+#program vyzývá k tipování čísla, program řekne jestli to bylo moc nebo málo a cyklí dokud netipnu akorát
+vyherni_cislo = 42
+tip = int(input("Tipni si číslo: "))
+counter = 1
+
+while counter > 0: #nebo "while True"
+    if vyherni_cislo < tip:
+        tip = int(input("Tipl jsi moc, zkus znovu: "))
+    if vyherni_cislo > tip:
+        tip = int(input("Tipl jsi málo, zkus znovu: "))
+    if vyherni_cislo == tip:
+        print("Výhra!")
+        break
+    counter += 1
