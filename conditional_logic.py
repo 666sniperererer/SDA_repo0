@@ -1,4 +1,5 @@
 #IF, ELSE, a podobně
+from getpass import fallback_getpass
 
 vek = 20
 if vek > 17:
@@ -164,7 +165,7 @@ while radek < 5:
     print(co_vypsat)
     radek += 1
 '''
-
+'''
 #Task 35
 #pomocí while cyklu dejte do listu čísla od 1 do 20
 #list vyprintujte
@@ -176,19 +177,22 @@ while cislo < 21:
     if cislo == 20:
         print(list)
 
-
+'''
 #Task 36
 #program vyzývá k tipování čísla, program řekne jestli to bylo moc nebo málo a cyklí dokud netipnu akorát
-vyherni_cislo = 42
-tip = int(input("Tipni si číslo: "))
+import random
+vyherni_cislo = random.randint(0,100) #vygeneruje náhodně číslo mezi "a" a "b", potřebuje knihovnu random
+tip = int(input("Tipni si číslo mezi 0 a 100: "))
 counter = 1
+vyhral = False
 
-while counter > 0: #nebo "while True"
+while counter > 0 and vyhral == False: #nebo "while True"
     if vyherni_cislo < tip:
         tip = int(input("Tipl jsi moc, zkus znovu: "))
     if vyherni_cislo > tip:
         tip = int(input("Tipl jsi málo, zkus znovu: "))
     if vyherni_cislo == tip:
         print("Výhra!")
-        break
+        vyhral = True
+        #break
     counter += 1
