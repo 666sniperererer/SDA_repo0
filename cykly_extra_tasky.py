@@ -123,3 +123,5 @@ print(f"Super, takže sis myslel číslo {tip_pocitace}")
 #Vykreslování je cyklické. Po vykreslení jednoho obrazce se opakovaně program ptá co dalšího budeme vykreslovat.
 #Tip - vykreslujeme do vícerozměrného pole
 #Velikost plátna zadáme na vstupu
+
+#

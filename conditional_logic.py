@@ -153,7 +153,7 @@ while n < 5:
         continue
     print(n)
 '''
-'''
+
 radek = 1
 while radek < 5:
     sloupec = 0
@@ -164,7 +164,7 @@ while radek < 5:
         sloupec += 1
     print(co_vypsat)
     radek += 1
-'''
+
 '''
 #Task 35
 #pomocí while cyklu dejte do listu čísla od 1 do 20
