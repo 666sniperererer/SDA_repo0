@@ -12,6 +12,7 @@ def spust_tuto_sekci(tatosekce): #Tato funkce vyhodí spustit = true pokud se ta
     return spustit
 
 #cislosekce = vyber_sekce()
+'''
 vyber_sekce()
 
 #1
@@ -23,3 +24,4 @@ if spust_tuto_sekci(2):
 #3
 if spust_tuto_sekci(3):
     print("Sekce 3")
+'''
