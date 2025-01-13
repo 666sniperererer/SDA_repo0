@@ -20,5 +20,6 @@ index_phonebook = 3
 print(phonebook["John"][index_phonebook])
 '''
 
-import numpy as np
-print(np.random.randint(2,200))
+#import numpy as np
+#print(np.random.randint(2,200))
+
