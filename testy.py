@@ -23,3 +23,9 @@ print(phonebook["John"][index_phonebook])
 #import numpy as np
 #print(np.random.randint(2,200))
 
+
+print([1, 2].extend([3, 4]))
+
+s = {3, 4, 1, 1}
+print(max(s))
+print(s)
