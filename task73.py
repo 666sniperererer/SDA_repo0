@@ -34,7 +34,6 @@ while True:
     vyber = int(input("Zvol možnost: "))
 
     if vyber == 1: #1. Přidat položku"
-        vypis_seznam()
         seznam.append(input("Jakou položku chceš přidat? "))
         vypis_seznam()
 
@@ -44,13 +43,11 @@ while True:
     if vyber == 3: #3. Smazat položku
         vypis_seznam()
         seznam.pop(int(input("Jakou položku chceš odstranit? "))-1)
-        vypis_seznam()
 
     if vyber == 4: #4. Upravit položku
         vypis_seznam()
         k_uprave = int(input("Jakou položku chceš upravit? ")) - 1
         seznam[k_uprave] = input("Zadej novou položku: ")
-        vypis_seznam()
 
     if vyber == 5: #5. Uložit seznam do CSV
         nazev_souboru = input("Zadej název souboru CSV pro uložení: ")
