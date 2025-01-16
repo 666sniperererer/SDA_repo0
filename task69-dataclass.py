@@ -33,9 +33,9 @@ class TrainUtils:
 
     @staticmethod
     def calculate_travel_time(distance, speed):
-        time = round(float(distance / speed),2)
-        if time <= 0:
+        if speed <= 0:
             raise InvalidSpeedError
+        time = round(float(distance / speed),2)
         print(time)
 
     @staticmethod
@@ -48,5 +48,9 @@ class InvalidSpeedError(Exception):
         message = "Neplatná rychlost!"
         super().__init__(message)
 
-TrainUtils.calculate_travel_time(500,45)
+try:
+    TrainUtils.calculate_travel_time(500,45)
+except InvalidSpeedError as e:
+    print(e)
+
 TrainUtils.calculate_ticket_price(1000,4)
