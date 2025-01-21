@@ -18,5 +18,5 @@ print(vysledek)
 print("Pomocí reduce najděte nejdelší řetězec v listu")
 
 jazyky = ["Python", "Java", "C++", "JavaScript"]
-nejdelsi = reduce(lambda x,y: x if len(x) > len(y) else y, jazyky) #ZDE doplnit místo 0
+nejdelsi = reduce(len, jazyky) #ZDE doplnit místo 0
 print(nejdelsi)
