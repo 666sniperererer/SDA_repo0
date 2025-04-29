@@ -1,4 +1,4 @@
-class Queue:
+"""class xxQueue:
     def __init__(self):
         self.__items = []
 
@@ -27,7 +27,7 @@ class Queue:
         return str(self.__items)
 
 
-my_quee = Queue()
+my_quee = xxQueue()
 
 my_quee.insert_item(1)
 my_quee.insert_item(4)
@@ -43,3 +43,4 @@ print(my_quee.size())
 print(my_quee.delete())
 
 print(my_quee)
+"""
